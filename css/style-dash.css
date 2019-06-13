@@ -1,0 +1,202 @@
+/*------------------------------------------------------------------
+Bootstrap Admin Template by EGrappler.com
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[1. Global]
+
+body {
+	background: #f7f7f7;
+	font: 13px/1.7em 'Open Sans';
+}
+*/    
+p { 
+	font: 13px/1.7em 'Open Sans'; 	
+}
+
+a {
+    cursor: pointer;
+}
+/*------------------------------------------------------------------
+[4. Main / .main]
+*/
+.main {
+	padding-bottom: 2em;	
+	border-bottom: 1px solid #000;
+}
+
+
+/* Widgets  */
+.widget-nopad .widget-content {
+	padding: 0;
+}
+
+/* Widget Content Clearfix */	
+.widget-content:before,
+.widget-content:after {
+    content:"";
+    display:table;
+}
+
+.widget-content:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.widget-content {
+    zoom:1;
+}
+
+/* Widget Table */
+
+.widget-table .widget-content {
+	padding: 0;
+}
+
+.widget-table .table {
+	margin-bottom: 0;	
+	border: none;
+}
+
+.widget-table .table tr td:first-child {
+	border-left: none;
+}
+
+.widget-table .table tr th:first-child {
+	border-left: none;
+}
+
+
+/* Widget Plain */
+
+.widget-plain {	
+	background: transparent;	
+	border: none;
+}
+
+.widget-plain .widget-content {
+	padding: 0;	
+	background: transparent;	
+	border: none;
+}
+
+/* Widget Box */
+
+.widget-box {	
+	
+}
+
+.widget-box .widget-content {	
+	background: #E3E3E3;	
+	background: #FFF;
+}
+
+/*------------------------------------------------------------------
+[8. Miscellaneous]
+*/
+
+.chart-holder {
+	width: 100%;
+	height: 250px;
+}
+
+.dropdown-menu li>a:hover, .dropdown-menu .active>a, .dropdown-menu .active>a:hover { background:#00ba8b;}
+.accordion-heading { background:#e5e5e5;  }
+.accordion-heading a { color:#545454; text-decoration:none; font-weight:bold; }
+.all-icons li { list-style:none;}
+.ML0 { margin-left:0}
+.MR0 { margin-right:0;}
+.paginate_active { text-decoration: underline; }
+
+/*------------------------------------------------------------------
+[1. Max Width: 767px]
+*/
+
+    
+/*------------------------------------------------------------------
+[3. Max Width: 979px]
+*/
+
+@media (max-width: 979px) {
+	
+	.navbar-fixed-top {
+		position: static;		
+		margin-bottom: 0;
+	}
+	
+	.subnavbar {
+	}
+	
+	.subnavbar .container {		
+		width: auto;
+	}
+}
+
+/*------------------------------------------------------------------
+[2. Max Width: 1200px]
+*/
+
+@media (min-width: 1200px) {
+	.navbar .search-query {
+		width: 200px;
+	}	
+}
+
+.hide-widget {
+	float:right; 
+	margin-top:12px; 
+	padding-right:10px;
+	cursor:pointer;
+	margin-right: 4px;
+}
+
+/*  widgets menu */
+#theme-setting > a:hover {
+    text-decoration: none;
+    color: #555;
+}
+#theme-setting > a {
+    display: inline-block;
+    color: #999;
+    vertical-align: top;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.7);
+    padding: 7px;
+}
+
+#theme-setting {
+    white-space: nowrap;
+    border: 0.3px solid #f2f2f2;
+}
+
+#theme-setting {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    z-index: 9;
+    white-space: nowrap;    
+}
+
+#theme-setting ul, #theme-setting2 ul {
+	list-style-type: none;
+}
+
+#theme-setting2 {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    z-index: 9;
+    white-space: nowrap;
+    width: 280px;
+    border: 0.3px solid #f2f2f2;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.hide-setting {
+	display: none;
+}
+
+.show-setting {
+	display: inline-block;
+}
+
+
