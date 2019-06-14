@@ -58,7 +58,7 @@ header("location: chooser.php");
 <div id="top_login" class="col-md-12 col-sm-12 col-xs-12">
 	<div class="login-box">
 
-		<div class="login-box-body col-md-3 col-sm-4" style="float: none; margin-left: auto; margin-right: auto;">
+		<div class="login-box-body col-md-4 col-sm-4" style="float: none; margin-left: auto; margin-right: auto;">
 			<div class="login-logo">
 				<span class="row"><img src="images/pdf.png" style="height: 40px; margin-bottom: 15px; margin-top: -50px;" alt=""></span>
 				<span><b>Zabbix PDF reports</b></span>
