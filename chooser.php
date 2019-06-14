@@ -225,8 +225,8 @@ ZabbixAPI::logout($z_server,$z_user,$z_pass)
 // Form dropdown boxes from Zabbix API Data
 ?>
 <center>
-<form class="cmxform row -col-md-6 col-sm-6" id="ReportForm" name="ReportForm" action='createpdf.php' method='GET' style="float: none; margin-left: auto; margin-right: auto;" >
-	<table border="1" rules="NONE" frame="BOX" widthx="800" height="450" cellpadding="10" style="background-color: #fff;"> 
+<form class="cmxform row col-md-8 col-sm-8 col-lg-6" id="ReportForm" name="ReportForm" action='createpdf.php' method='GET' style="float: none; margin-left: auto; margin-right: auto;" >
+	<table border="1" rules="NONE" frame="BOX" height="450" cellpadding="10" style="background-color: #fff;"> 
 	<tr>
 		<td valign="middle" align="left">
 		&nbsp;
@@ -290,9 +290,11 @@ ZabbixAPI::logout($z_server,$z_user,$z_pass)
 			<input type="checkbox" name="ItemsOn" value="yes"> <?php echo $labels['Show configured items status']; ?></input> &nbsp;
 			<input type="checkbox" name="TrendsOn" value="yes"> <?php echo $labels['Show configured trends (SLA-ish)']; ?></input>
 			</p>
-			<p>
-			<input type="string" name="mygraphs2" style="font-size: 9px;"  size=80 value="<?php echo $mygraphs; ?>"> &uarr; <?php echo $labels['Graphs to show']; ?> (#.*# = <?php echo $labels['all']; ?>):</input>
-			<input type="string" name="myitems2" style="font-size: 9px;"  size=80 value="<?php echo $myitemgraphs; ?>"> &uarr; <?php echo $labels['Items to graph']; ?> (#.*# = <?php echo $labels['all']; ?>):</input>
+			<p style="margin-top: 10px;">
+			&uarr; <?php echo $labels['Graphs to show']; ?> (#.*# = <?php echo $labels['all']; ?>): <br>
+			<input type="string" name="mygraphs2" style="font-size: 9px;"  size=80 value="<?php echo $mygraphs; ?>" /> <br> 
+			&uarr; <?php echo $labels['Items to graph']; ?> (#.*# = <?php echo $labels['all']; ?>):<br>
+			<input type="string" name="myitems2" style="font-size: 9px;"  size=80 value="<?php echo $myitemgraphs; ?>" /> 
 			</p>
 		</td>
 <!--		<td valign="middle">
@@ -345,7 +347,7 @@ ZabbixAPI::logout($z_server,$z_user,$z_pass)
 		</p>
 		</td>
 	</tr>
-	<tr><td>&nbsp;</td></tr>
+<!--	<tr><td>&nbsp;</td></tr>-->
 	<tr>
 		<td colspan="4" align="middle">
 		<input type='submit' value='<?php echo $labels['Generate']; ?>' class="btn btn-success">
