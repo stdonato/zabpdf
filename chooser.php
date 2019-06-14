@@ -225,8 +225,8 @@ ZabbixAPI::logout($z_server,$z_user,$z_pass)
 // Form dropdown boxes from Zabbix API Data
 ?>
 <center>
-<form class="cmxform row col-md-8 col-sm-8 col-lg-6" id="ReportForm" name="ReportForm" action='createpdf.php' method='GET' style="float: none; margin-left: auto; margin-right: auto;" >
-	<table border="1" rules="NONE" frame="BOX" height="450" cellpadding="10" style="background-color: #fff;"> 
+<form class="cmxform row col-md-8 col-sm-8" id="ReportForm" name="ReportForm" action='createpdf.php' method='GET' style="float: none; margin-left: auto; margin-right: auto;" >
+	<table border="1" rules="NONE" frame="BOX" height="450" cellpadding="10" style="background-color: #fff; min-width: 650px;"> 
 	<tr>
 		<td valign="middle" align="left">
 		&nbsp;
