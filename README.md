@@ -13,3 +13,5 @@ Run ./fixrights.sh after you have checked out this repo.
 Folders reports and tmp need to be writable by the webserver. 
 
 Run: chmod 777 tmp reports
+
+NOT TESTED WITH ZABBIX 4.4
